@@ -1,0 +1,30 @@
+body{
+    justify-content: center;
+    align-content: center;
+    margin: 100px 100px 100px 100px;
+    display: flex;
+    align-content: center;
+    background-color: #FEF9E7;
+}
+
+.heart{
+   
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background: #d16ba5;
+    border-radius: 200px 200px 0px 0px;
+    transform: rotate(45deg);
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    background: #d16ba5;
+    height: 160px;
+    width: 100px;
+    transform: rotate(-90deg);
+    border-radius: 200px 200px 0px 0px;
+    left: -30px;
+    top: 30px;
+}
